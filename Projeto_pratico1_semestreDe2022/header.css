@@ -1,0 +1,152 @@
+.layoutHome{
+    width: 100%;
+    margin-left:0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding:40px 0px 180px 0px;
+    
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(img/fundo_img_jogo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 437px;
+    background-color: black;
+    width: 100%;
+   
+} 
+
+.imagem{
+    margin-top: -390px;
+    margin-left: 697px;
+    display:table;
+    position:absolute;
+    transform: translate3d(29.9959px,0px,0px);
+}
+
+h2{
+    font-family: cursive;
+    color:rgb(255, 255, 255) ;
+    margin-left: 10vh;
+
+}
+h1{
+    font-size: 60px;
+    margin-left: 10vh; 
+    color: rgb(255, 255, 255);
+}
+p{
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 10vh;
+    color: rgba(255, 255, 255, 0.774);
+}
+header a{
+    margin-left: 10vh;
+    border-radius: 32px;
+    border: solid 1px blue;
+}
+.botaoEscreva{
+    background-color: #078fde;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    font-size: 25px;
+    padding:  20px 50px;
+    transition: all .9s;
+}
+.botaoEscreva:hover, .botaoEscreva:focus{
+    background-color: #fff;
+    color: black;
+}
+section{
+    display: flex;
+}
+.secoes > div{
+    background-color: black;
+    display: block;
+    width: 100%;
+    padding: 20px;
+
+    
+}
+
+.secoes >div >h2{
+    border-radius: 5px 20px;
+    box-shadow: 6px 3px 3px #f5d773;
+    padding: 8px;
+    border: solid 0.1px #f5d773;
+
+}
+/* leyout do carrecel*/
+
+.secoes2{
+    display:flex;
+    background-color: rgb(168, 75, 75);
+    height: 600px;  
+    margin: 2px  2% 0% 3%;
+    border-radius: 10px;
+    
+}
+.secoes2 > h2{
+    position: absolute;
+    margin-left: 30%;  
+}
+
+/*play do jogo*/
+
+.jogoTeste{
+    display:flex;
+    background-color: rgb(168, 75, 75); 
+    margin: 3px  2% 0% 3%;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.jogo{
+    display:flex;
+    background-color: rgb(168, 75, 75); 
+    margin: 3px  2% 0% 3%;
+    justify-content: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    color: black;
+}
+
+.carrocel{
+    display:flex;
+    width: 100%;
+    box-shadow: 10px 10px 15px;
+    margin: 150px auto;
+    overflow: hidden;
+}
+.carrocel ul{
+    margin: 10px;
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.carrocel li  {
+    position: relative;
+    animation: slide 15s infinite ease-out;
+    justify-content: space-between;
+    padding: 10px;
+    
+    
+}
+
+
+.rodape{
+    padding: 40px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+blockquote{
+    font-size: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+}

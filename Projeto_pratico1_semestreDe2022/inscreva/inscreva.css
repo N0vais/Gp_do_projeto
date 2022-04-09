@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#C78C19 ;
+    border-radius: 50px;
+    margin-bottom: 20px;
+
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    padding: 5px;
+
+    
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 30px;
+    }
+.nav-list li:hover {
+    color: #C78C19;
+    text-decoration: underline;
+    transition: 0.9s;   
+}
+
+
+a {
+    color: #C78C19;
+    text-decoration: none;
+    transition: 0.3s;
+ }
+ 
+ a:hover {
+     font-size: small;
+     opacity: 0.8;
+ }
+
+header {
+	border-radius: 10px;
+	background: #23232c;
+	height: 180px;
+	padding: 5px 0;
+    
+}
+.caixa {
+    
+	display: flex;
+    justify-content: center;
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	align-items: center;
+    list-style: none;
+    
+}
+
+.caixa h1 {
+	margin-right: 0px;
+    color: #fff;
+
+}
+
+/*aki colaca a imagem de fundo*/
+
+body{
+    border: 1px solid #23232c;
+    padding-top:2px;
+    background-image: url('../img/fundo_img_jogo.jpg');
+    background-size: cover;
+    
+    background-position-y: -150px;
+    margin: 10px;
+    height: 90vh;
+    
+}
+/*aki inicia o form*/
+
+#main-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background:rgba(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 25px;
+    
+}
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex:1 1 100%;
+    position: relative;
+    color: #aaa;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+    color: #aaa;
+} 
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    color: #fff;
+    background-color: #23232c;
+}
+
+input:focus {
+    border-color: #C78C19;;
+}
+
+/*transladando o icone do olho*/
+span img{
+    position: absolute;
+    margin-top: 17px;
+    margin-left: -38px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border-radius: 40%;
+}
+span img:hover{
+    transform: translate(0, -25%);
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+input[type="submit"] {
+    background-color: rgba(36, 18, 53, 0.80);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+input[type="submit"]:hover{
+    font-size:larger;
+}
+
+input[type="reset"] {
+    background-color: rgba(36, 18, 53, 0.80);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+}
+
+input[type="reset"]:hover{
+    font-size: larger;
+} 
+
+#agreement{
+    margin-right: 5px;
+    
+}
+#agreenenterrorMassege{
+    margin-top: -500px;
+}
+
+#agreement,#agreement-label {
+    display: inline-block;
+    width: auto;
+    
+}
+
+
+.error-validation {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: #C78C19;
+    position: absolute;
+    top: 57px;
+    padding: 5px;
+    font-size: .9rem;
+    list-style: none;
+}
+.templet{
+    display: none;
+}
+
+
+/*aki começa a estilizaçao do rodapé*/
+footer {
+	text-align: center;
+	background-color: #23232c;
+	padding: 20px;
+	border-radius: 20px;
+}
+footer img {
+	width: 170px;
+	height: 170px;
+	border-radius: 30%;
+}
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}

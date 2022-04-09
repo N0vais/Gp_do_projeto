@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadasrtro</title>
+    <link rel="stylesheet" href="inscreva/inscreva.css">
+    <link rel="stylesheet" href="inscreva/keyFrames.css">
+</head>
+<body>
+    <header id="header"> 
+        <div class="caixa">
+            <li class="error-validation template"></li>
+            <h1><img src="#" alt="Studo tecnologia"></h1>
+            <nav>         
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+
+                </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="index.html">voltar</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="main-container">
+        <h1 class="pisca">Welcome!!<br>The registration</h1>
+        
+        <form action="#" method="post" id="register-form">
+
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email"data-min-length="3" data-required data-email-validate>                
+            </div>
+            <div class="half-box spacing">
+                <label for="name">First name</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu Nome !" data-max-length="10" data-only-letters>                
+            </div>
+            <div class="half-box">
+                <label for="lastname">Last name</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome !" data-required>                
+            </div>
+            <div class="half-box spacing">
+                <label for="cpf/cnpj">CPF/CNPJ</label>
+                <input type="text" name="cpf/cnpj" id="cpfcnpj" placeholder="Digite sómente Numeros !" autocomplete="off" maxlength="14" onkeyup="mascara_cpf()" data-required>                
+            </div>
+            <div class="half-box">
+                <label for="telefone">telefone</label>
+                <input type="tel" name="phone" id="telefone" placeholder="Digite seu numero de telefone!" data-required maxlength="16" onkeyup="mascara_telefone()">                 
+            </div>
+            <div class="half-box spacing">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Digite uma Senha"minlength="8" data-required data-password-validate>                
+                <span><img src="img/olho.png" alt="" onclick="toggle()"></span>
+            </div>
+            <div class="half-box">
+                <label for="passconfirmation">Confirm password</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme a senha."data-equal="password" data-required>                
+            </div>
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement" data-checkbox>   
+                <label for="agreement" id="agreement-label" >Eu li e aceito os <a href="termos.html"> termos de uso!!</a></label>            
+            </div>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Submit"> 
+            </div>
+            <div class="full-box">
+                <input type="reset"id="btn-reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <img src="#" alt="logo da studo">
+            <p class="copyright">&copy; Copyright Studo - 2022</p>
+
+    </footer>
+</body>
+</html>
